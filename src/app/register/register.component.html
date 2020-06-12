@@ -1,0 +1,38 @@
+<form class="form-register">
+  <mat-form-field appearance="outline">
+    <mat-label>Email</mat-label>
+    <input matInput name="Email" [(ngModel)]="user.email" type="email" placeholder="Email" required>
+  </mat-form-field>
+  <br/>
+  <mat-form-field appearance="outline">
+    <mat-label>Login</mat-label>
+    <input matInput name="login" [(ngModel)]="user.username" type="text" placeholder="Login" required>
+  </mat-form-field>
+  <br/>
+  <mat-form-field appearance="outline">
+    <mat-label>Password</mat-label>
+    <input matInput name="password" [(ngModel)]="user.password" type="password" placeholder="Password" required>
+  </mat-form-field>
+  <br/>
+  <mat-form-field appearance="outline">
+    <mat-label>Repeat password</mat-label>
+    <input matInput name="repeat-password" type="password" placeholder="Repeat password" required>
+  </mat-form-field>
+  <br/>
+  <mat-form-field appearance="outline">
+    <mat-label>First name</mat-label>
+    <input matInput name="first-name" [(ngModel)]="user.firstName" type="text" placeholder="First name" required>
+  </mat-form-field>
+  <br/>
+  <mat-form-field appearance="outline">
+    <mat-label>Second name</mat-label>
+    <input matInput name="second-name" [(ngModel)]="user.secondName" type="text" placeholder="Second name" required>
+  </mat-form-field>
+  <br/>
+  <mat-form-field appearance="outline">
+    <mat-label>Age</mat-label>
+    <input matInput name="age" [(ngModel)]="user.age" type="number" placeholder="Age" required>
+  </mat-form-field>
+  <br/>
+  <button mat-raised-button (click)="onSubmit();" color="primary">Sign in</button>
+</form>
